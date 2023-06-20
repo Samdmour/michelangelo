@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Michelangelo</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="img/jpg" href="foto/icon_home.png">
+  <link rel="stylesheet" type="text/css" href="michelangelo.css">
+  <script type="text/javascript">
+    function validar() {
+      var email = form1.email.value;
+      var nome = form1.nome.value;
+      var end = form1.end.value;
+
+      if (email == "") {
+        alert('Por favor, preencha o campo com seu email!');
+        form1.email.focus();
+        return false;
+      }
+      if (nome == "") {
+        alert('Por favor, preencha o campo com seu nome!');
+        form1.nome.focus();
+        return false;
+      }
+      if (end == "") {
+        alert('Por favor, preencha o campo com seu endereço!');
+        form1.end.focus();
+        return false;
+      }
+      if (nome.split(' ').length < 2) {
+        alert('Digite seu nome completo.');
+        form1.nome.focus();
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="section home" id="home">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#obras">Obras</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <h1 class="nome">Michelangelo</h1>
+  </div>
+
+  <div class="section historia" id="historia">
+    <h2>História</h2>
+    <p> Michelangelo di Lodovico Buonarroti Simoni, mais conhecido simplesmente como Michelangelo nasceu em Caprese, 6
+      de março de 1475 e faleceu em Roma, 18 de fevereiro de 1564, Foi um pintor, escultor, poeta, anatomista e
+      arquiteto italiano, considerado um dos maiores criadores da história da arte do ocidente.</p>
+    <p>Entre as obras de destaque produzidas por Michelangelo no campo da escultura estão Pietà, de 1499, e Davi,
+      produzida entre 1501 e 1504. No campo da pintura, destacam-se os afrescos que ele produziu no teto da Capela
+      Sistina, a pedido do papa Júlio II, entre os anos de 1508 e 1511.</p>
+    <p>Aos 13 anos de idade, Michelangelo foi enviado pelo seu pai para estudar artes com um renomado pintor de
+      Florença chamado Domenico Ghirlandaio.</p>
+    <p>O talento de Michelangelo chamou a atenção dos Médici, a família mais rica e poderosa de Florença e famosa por
+      atuar como mecenas de inúmeros artistas locais. A atuação dos Médici era importante e permitia que diversos
+      artistas dedicassem todo o seu tempo às artes, o que contribuiu para que a cidade de Florença fosse reconhecida
+      como um dos grandes centros do Renascimento.</p>
+    <p>Nesse período, ele residia no Palácio dos Médici e decidiu seguir o caminho da escultura, área das artes pela
+      qual ele tinha mais apreço. Destacam-se desse período duas obras de Michelangelo: Madonna da Escada (1490) e
+      Batalha dos Centauros (1492).</p>
+    <p>Além da escultura e pintura, Michelangelo também dedicou-se a muitos trabalhos na área de arquitetura,
+      especialmente em Florença, onde foi contratado pelos Médici para trabalhos de remodelação de construções da
+      cidade. Além disso, Michelangelo também dedicou-se por anos à escrita de poemas. O artista morreu no dia 18 de
+      fevereiro de 1564, sendo enterrado em uma basílica localizada em Florença.</p>
+
+
+
+    <p>Para mais informações <a href="https://brasilescola.uol.com.br/biografia/michelangelo.htm">Clique aqui.</a></p>
+  </div>
+
+  <div class="section obras" id="obras">
+    <h2>Principais Obras</h2>
+    <div class="container">
+      <div class="image-text">
+        <img src="foto/pieta.jpg">
+        <h4>A Pietà de Michelangelo</h4>
+      </div>
+      <div class="image-text">
+        <img src="foto/david.jpg">
+        <h4>David</h4>
+      </div>
+      <div class="image-text">
+        <img src="foto/capela.jpeg">
+        <h4>Teto da Capela Sistina</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="section contato" id="contato">
+    <div class="form">
+      <h2>Entre em contato</h2>
+      <form name="form1" action="aviso_form.html" method="post">
+        <b>Email: </b> <input type="text" placeholder="Email" name="email">
+        <b>Nome : </b> <input type="text" placeholder="Nome" name="nome">
+        <b>Endereço : </b> <input type="text" placeholder="Endereço" name="end">
+        <input type="submit" onclick="return validar()" value="Enviar">
+        <input type="reset" name="limpa" value="Limpar">
+      </form>
+    </div>
+
+  </div>
+  <div class="rodape">
+    <p>Trabalho acadêmico - Sem fins lucrativos</p>
+    <p class="tds">Samuel Rodrigues 2023 - &copyTodos os direitos reservados.
+      <a href="#"><img class="rodape" src="foto/seta.png"></a>
+    </p>
+  </div>
+
+</body>
+
+</html>

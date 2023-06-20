@@ -1,0 +1,214 @@
+/* Utilizado para o html de Michelangelo */
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+ }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .home {
+    padding: 0;
+    background-image: url(foto/retrato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .historia {
+    background-color: #e0e0e0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }  
+
+  .obras {
+    background-color: #d0d0d0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contato {
+    background-color: #c0c0c0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .rodape {
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;  
+    padding: 10px;
+  }
+  .form1 {
+    padding-top: 0;
+    background-color: #c0c0c0;
+    background-size: cover;
+    height: 84.4vh; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: 000;
+  }
+  ul {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    position: fixed;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    top: 20px;
+  }
+  
+  li a {
+    background-color: whitesmoke;
+    color: #CDB290;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    transition: background-color 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color: #CDB290;
+    color: whitesmoke;
+    text-decoration: none;
+  } 
+  textarea {
+    resize: none;
+    width: 500px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 250%;
+    padding: 5vh;
+    
+  }
+  h1.nome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  h5 {
+    font-size: 15px;
+    padding: 1px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  img.rodape {
+   margin-right: 10px;
+   width: 8%;
+   height: auto;
+  }
+  p.tds {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    margin-left: 55vh;
+  }
+   
+  hr {
+    border-color: black;
+    border-style: solid;
+  }
+  
+  p {
+    line-height: 1.5;
+    padding-left: 12em;
+    padding-right: 12em;
+    padding-top: 2em;
+  }
+  .container img {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    border-width: 1px;
+    border-radius: 10px;
+    border: #000;
+    border-style: solid;   
+  }
+  
+  .image-text h4 {
+    flex: 1;
+    margin-right: 35px;
+  }
+  .container img:hover {
+    box-shadow: 0 0 5px #000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; 
+  }
+  .form {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form input[type="submit"],
+  .form input[type="reset"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form input[type="submit"]:hover,
+  .form input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+  
